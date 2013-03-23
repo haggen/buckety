@@ -1,0 +1,2 @@
+web: supervisor index.js
+db: mongod --dbpath ./db

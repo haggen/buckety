@@ -1,0 +1,19 @@
+{
+  "name": "Buckety",
+  "version": "0.0.1",
+  "description": "Mind your front end.",
+  "author": "Arthur Corenzan <arthur@corenzan.com>",
+  "repository": "",
+  "homepage": "",
+  "main": "index.js",
+
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+
+  "dependencies": {
+    "express": "3.0.x",
+    "mongoskin": "0.5.x"
+  }
+}
