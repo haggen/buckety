@@ -8,8 +8,8 @@
   "main": "index",
 
   "engines": {
-    "node": "~> 0.8",
-    "npm": "~> 1.1"
+    "node": "~> 0.10",
+    "npm": "~> 1.2"
   },
 
   "dependencies": {
