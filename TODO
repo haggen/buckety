@@ -1,0 +1,5 @@
+
+Buckety:
+  ☐ Refactor middlewares, code still ugly
+  ☐ Come up with better state of selected App during request
+  ☐ Rewrite in Coffee
