@@ -1,0 +1,12 @@
+form(action="/#{app._id || ''}", method="post")
+  div
+    label(for="_id") ID:
+    input(type="text", name="_id", value=app._id, disabled)
+  div
+    label(for="name") Name:
+    input(type="text", name="name", value=app.name)
+  div
+    label(for="origin") Origin:
+    textarea(name="origin")= app.origin
+  button(class="button") Save app
+  a(href="/", class="button red") Cancel

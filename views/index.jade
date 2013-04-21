@@ -1,0 +1,23 @@
+extends layout
+
+block body
+  if apps.length > 0
+    table
+      thead
+        tr
+          th #
+          th Name
+          th
+      tbody
+        each app in apps
+          tr
+            td= app._id
+            td= app.name
+            td
+              a(href="/edit/#{app._id}") Update
+              = " - "
+              a(href="/delete/#{app._id}") Remove
+              = " - "
+              a(href="/#{app._id}/") URL
+  else
+    p No app registered.

@@ -1,0 +1,111 @@
+a {
+  color: #06c;
+  text-decoration: none;
+}
+
+body {
+  font: 200 20px/1 Open\ Sans;
+  padding: 1.635em;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+}
+
+th {
+  background: #f0f0f0;
+}
+
+th:first-child {
+  border-radius: 2px 0 0 2px;
+}
+
+th:last-child {
+  border-radius: 0 2px 2px 0;
+}
+
+th, td {
+  padding: .8751em;
+}
+
+td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+h1 {
+  font-size: 2.7em;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+}
+
+header {
+  margin-bottom: 1.635em;
+}
+
+form {
+  background: #f0f0f0;
+  padding: .8751em;
+}
+
+form div {
+  clear: both;
+  margin-bottom: .327em;
+}
+
+form label {
+  display: block;
+  float: left;
+  width: 9.81em;
+  line-height: 1.654;
+}
+
+input[type="text"],
+textarea {
+  -webkit-appearance: none;
+  border: 0;
+  box-shadow: inset 0 1px 2px #aaa;
+  border-radius: 2px;
+  padding: .327em;
+  width: 16.39em;
+}
+
+form button {
+  margin-left: 9.81em;
+}
+
+.menu {
+  float: right;
+}
+
+button.button {
+  -webkit-appearance: none;
+  border: 0;
+  line-height: 1;
+  font-weight: 100;
+}
+
+.button {
+  display: inline-block;
+  padding: .8751em;
+  background: #06c;
+  text-shadow: 0 -1px rgba(0, 0, 0, .4);
+  border-radius: 2px;
+  color: #fff;
+}
+
+.button + .button {
+  margin-left: .327em;
+}
+
+.button:hover {
+  background: #28d;
+}
+
+.button.red {
+  background: #c30;
+}
+
+.button.red:hover {
+  background: #d43;
+}
