@@ -1,5 +1,6 @@
 
 Buckety:
-  ☐ Refactor middlewares, code still ugly
-  ☐ Come up with better state of selected App during request
-  ☐ Rewrite in Coffee
+  ✔ Rewrite in Coffee @done (13-04-20 10:36)
+  ✔ Use one database for faster prototyping @done (13-04-20 10:36)
+  ✔ Create an admin panel @done (13-04-21 09:30)
+  ☐ Add info and statistics page
