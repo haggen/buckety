@@ -1,2 +1,2 @@
-web: supervisor index.js
+web: supervisor index.coffee
 db: mongod --dbpath ./db
