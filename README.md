@@ -16,9 +16,8 @@ Each application has a registry in our database:
 ```javascript
 {
   _id: '...',
+  name: '...',
   origin: '*',
-  xhr_only: true,
-  database_url: '...'
 }
 ```
 
