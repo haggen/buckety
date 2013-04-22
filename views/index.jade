@@ -7,17 +7,19 @@ block body
         tr
           th #
           th Name
+          th Collections
           th
       tbody
         each app in apps
           tr
             td= app._id
             td= app.name
+            td= app.collections.length
             td
               a(href="/edit/#{app._id}") Update
               = " - "
               a(href="/delete/#{app._id}") Remove
               = " - "
-              a(href="/#{app._id}/") URL
+              a(href="/#{app.name}/") URL
   else
     p No app registered.

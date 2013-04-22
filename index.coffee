@@ -18,7 +18,10 @@ web.engine 'jade', require('jade').__express
 
 web.get '/', (request, response) ->
   db.collection('_apps').find().toArray (err, docs) ->
-    response.render('index', apps: docs)
+    db.collectionNames (err, collections) ->
+      for app in docs
+        app.collections = collections.filter (collection) -> ~collection.name.indexOf(app._id)
+      response.render('index', apps: docs)
 
 web.get '/new', (request, response) ->
   response.render('new', app: {name: moniker.choose(), origin: '*'})
@@ -48,7 +51,7 @@ Buckety =
     if app of Buckety.cache
       callback(Buckety.cache[app])
     else
-      db.collection('_apps').findById app, (err, doc) ->
+      db.collection('_apps').findOne {name: app}, (err, doc) ->
         if doc
           doc.collection = (name) ->
             db.collection("b#{doc._id}_#{name}")
