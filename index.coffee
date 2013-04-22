@@ -51,7 +51,7 @@ Buckety =
       db.collection('_apps').findById app, (err, doc) ->
         if doc
           doc.collection = (name) ->
-            db.collection(doc.name.replace(/\W/g, '_') + '_' + name)
+            db.collection("b#{doc._id}_#{name}")
         Buckety.cache[app] = if err then null else doc
         Buckety.fetch(app, callback)
 
